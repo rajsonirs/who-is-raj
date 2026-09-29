@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raj Soni | Portfolio - Computer Science (Data Science)</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Portfolio of Raj Soni - Computer Science (Data Science) Student. AI + Data Science Enthusiast building Real-Time Web Systems, FastAPI backends, Streamlit dashboards, and IoT integrations.">
+  <meta name="keywords"
+    content="Raj Soni, Data Science, Python, FastAPI, Streamlit, Unemployment Analysis, Smart Manufacturing, IoT, Machine Learning">
+  <meta name="author" content="Raj Soni">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Chart.js CDN for Interactive Data Visualizations -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Dynamic Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-dot"></span>
+        <span>RAJ SONI</span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About & Edu</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#creative" class="nav-link">Creative Corner</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="fas fa-sun"></i>
+        </button>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="status-dot"></span>
+          <span>B.Tech CS (Data Science) | 2023–2027</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Raj Soni</span>
+        </h1>
+
+        <p class="hero-tagline">
+          AI + Data Science Enthusiast | Building Real-Time Web Systems
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-project-diagram"></i> Explore Projects
+          </a>
+          <a href="https://github.com/rajsonirs" target="_blank" rel="noopener" class="btn btn-secondary">
+            <i class="fab fa-github"></i> GitHub Profile
+          </a>
+          <button onclick="copyToClipboard('rajsoni93061@gmail.com', 'Email')" class="btn btn-secondary">
+            <i class="fas fa-envelope"></i> Copy Email
+          </button>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3>Python</h3>
+            <p>EDA & Dashboards</p>
+          </div>
+          <div class="stat-item">
+            <h3>FastAPI</h3>
+            <p>Backend Systems</p>
+          </div>
+          <div class="stat-item">
+            <h3>IoT + AI</h3>
+            <p>Real-Time Telemetry</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="avatar-card-wrapper">
+          <div class="avatar-img-container">
+            <img src="assets/avatar.jpg" alt="Raj Soni Avatar" class="avatar-img">
+          </div>
+          <div class="avatar-overlay-badge">
+            <div class="avatar-info">
+              <h4>Raj Soni</h4>
+              <p>@rajsonirs</p>
+            </div>
+            <div class="hero-tech-pills">
+              <i class="fab fa-python" title="Python"></i>
+              <i class="fas fa-bolt" title="FastAPI"></i>
+              <i class="fas fa-chart-line" title="Streamlit"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Education Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-graduation-cap"></i> Academic Journey</span>
+        <h2 class="section-title">Education & Background</h2>
+        <p class="section-subtitle">Combining solid computer science fundamentals with hands-on time-series data
+          analysis & API development.</p>
+      </div>
+
+      <div class="education-grid">
+        <div class="info-card">
+          <div class="card-icon-header">
+            <div class="icon-box">
+              <i class="fas fa-university"></i>
+            </div>
+            <div>
+              <span class="edu-timeline">2023 – 2027 (Ongoing)</span>
+              <h3 class="edu-degree">B.Tech in Computer Science</h3>
+              <p class="edu-institution">Specialization: Data Science</p>
+            </div>
+          </div>
+          <p class="edu-description">
+            Focusing on real-time data processing, time-series analysis, Python environment workflows, backend web
+            development with FastAPI, and IoT telemetry integration.
+          </p>
+          <div class="edu-highlights">
+            <span class="chip"><i class="fas fa-check"></i> Data Cleaning & EDA</span>
+            <span class="chip"><i class="fas fa-check"></i> Seasonal Decomposition</span>
+            <span class="chip"><i class="fas fa-check"></i> Streamlit Dashboards</span>
+            <span class="chip"><i class="fas fa-check"></i> Environment Setup</span>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="card-icon-header">
+            <div class="icon-box">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div>
+              <span class="edu-timeline">Core Philosophy</span>
+              <h3 class="edu-degree">Engineering Real-Time Systems</h3>
+              <p class="edu-institution">Bridging Models with Web Dashboards</p>
+            </div>
+          </div>
+          <p class="edu-description">
+            Strong emphasis on clean VS Code terminal execution, Anaconda environment isolation, modular FastAPI
+            endpoints, and intuitive interactive user interfaces.
+          </p>
+          <div class="edu-highlights">
+            <span class="chip"><i class="fas fa-terminal"></i> VS Code Workflow</span>
+            <span class="chip"><i class="fas fa-boxes"></i> Anaconda Conda</span>
+            <span class="chip"><i class="fas fa-network-wire"></i> IoT APIs</span>
+            <span class="chip"><i class="fas fa-magic"></i> Aesthetic Bios</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-cogs"></i> Expertise</span>
+        <h2 class="section-title">Technical Proficiency</h2>
+        <p class="section-subtitle">Tools, languages, and workflows I leverage to build data-driven web applications.
+        </p>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="skills-filter">
+        <button class="filter-btn active" data-filter="all">All Skills</button>
+        <button class="filter-btn" data-filter="data">Data & Python</button>
+        <button class="filter-btn" data-filter="web">Web & APIs</button>
+        <button class="filter-btn" data-filter="tools">Workflows & Tools</button>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Skill 1: Python -->
+        <div class="skill-card" data-category="data">
+          <div>
+            <div class="skill-header">
+              <div class="skill-title-area">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+              </div>
+              <span class="level-badge intermediate">Intermediate</span>
+            </div>
+            <p class="skill-desc">
+              Data cleaning, Exploratory Data Analysis (EDA), time-series seasonal decomposition, Pandas, NumPy, and
+              Streamlit dashboards.
+            </p>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">EDA</span>
+            <span class="skill-tag">Time-Series</span>
+            <span class="skill-tag">Plotly</span>
+          </div>
+        </div>
+
+        <!-- Skill 2: Streamlit -->
+        <div class="skill-card" data-category="web">
+          <div>
+            <div class="skill-header">
+              <div class="skill-title-area">
+                <i class="fas fa-chart-line"></i>
+                <h3>Streamlit</h3>
+              </div>
+              <span class="level-badge intermediate">Intermediate</span>
+            </div>
+            <p class="skill-desc">
+              Building interactive data dashboards, custom components, state management, and real-time API integrations.
+            </p>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Dashboards</span>
+            <span class="skill-tag">Data Viz</span>
+            <span class="skill-tag">API Integration</span>
+          </div>
+        </div>
+
+        <!-- Skill 3: VS Code Workflow -->
+        <div class="skill-card" data-category="tools">
+          <div>
+            <div class="skill-header">
+              <div class="skill-title-area">
+                <i class="fas fa-code"></i>
+                <h3>VS Code Workflow</h3>
+              </div>
+              <span class="level-badge intermediate">Intermediate</span>
+            </div>
+            <p class="skill-desc">
+              Multi-terminal execution, virtual environment management, debugging Python backends, git workflows, and
+              frontend setups.
+            </p>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Integrated Terminal</span>
+            <span class="skill-tag">Virtualenv</span>
+            <span class="skill-tag">Debugging</span>
+          </div>
+        </div>
+
+        <!-- Skill 4: FastAPI -->
+        <div class="skill-card" data-category="web">
+          <div>
+            <div class="skill-header">
+              <div class="skill-title-area">
+                <i class="fas fa-bolt"></i>
+                <h3>FastAPI</h3>
+              </div>
+              <span class="level-badge beginner">Beginner</span>
+            </div>
+            <p class="skill-desc">
+              API creation, RESTful endpoints, request/response models (Pydantic), and connecting backend servers to ML
+              pipelines.
+            </p>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">REST API</span>
+            <span class="skill-tag">Endpoints</span>
+            <span class="skill-tag">JSON Stream</span>
+          </div>
+        </div>
+
+        <!-- Skill 5: Anaconda Environment -->
+        <div class="skill-card" data-category="tools">
+          <div>
+            <div class="skill-header">
+              <div class="skill-title-area">
+                <i class="fas fa-boxes"></i>
+                <h3>Anaconda Usage</h3>
+              </div>
+              <span class="level-badge beginner-intermediate">Beginner-Intermediate</span>
+            </div>
+            <p class="skill-desc">
+              Creating conda environments, package dependency management, Jupyter notebook integration, and reproducible
+              environment exports.
+            </p>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Conda Envs</span>
+            <span class="skill-tag">Jupyter</span>
+            <span class="skill-tag">Dependencies</span>
+          </div>
+        </div>
+
+        <!-- Skill 6: IoT API Integration -->
+        <div class="skill-card" data-category="web">
+          <div>
+            <div class="skill-header">
+              <div class="skill-title-area">
+                <i class="fas fa-microchip"></i>
+                <h3>IoT API Integration</h3>
+              </div>
+              <span class="level-badge beginner">Beginner</span>
+            </div>
+            <p class="skill-desc">
+              Connecting IoT telemetry sensors to backend web services, handling real-time stream data, and anomaly
+              detection feeds.
+            </p>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Telemetry</span>
+            <span class="skill-tag">Real-Time</span>
+            <span class="skill-tag">Sensor Feeds</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-folder-open"></i> Portfolio Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Real-world applications built with Python, FastAPI, Streamlit, and IoT data
+          integrations.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Seasonal Trend Analysis for Unemployment Data -->
+        <div class="project-card">
+          <div class="project-content">
+            <div>
+              <span class="project-badge"><i class="fas fa-chart-area"></i> Time-Series Data Science</span>
+              <h3 class="project-title">Seasonal Trend Analysis for Unemployment Data</h3>
+              <p class="project-desc">
+                An end-to-end data analytics project decomposing complex historical unemployment datasets into Trend,
+                Seasonality, and Residual components. Implemented using Python, Anaconda environment, and VS Code
+                terminal workflows.
+              </p>
+              <div class="project-tech">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">Anaconda</span>
+                <span class="tech-chip">VS Code</span>
+                <span class="tech-chip">Time-Series</span>
+                <span class="tech-chip">EDA</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-primary" data-open-demo="unemployment">
+                <i class="fas fa-play"></i> Live Interactive Demo
+              </button>
+              <a href="https://github.com/rajsonirs/Unemployment-sentiment-" target="_blank" rel="noopener"
+                class="btn btn-secondary">
+                <i class="fab fa-github"></i> Repository
+              </a>
+            </div>
+          </div>
+
+          <div class="project-preview">
+            <img src="assets/unemployment.jpg" alt="Unemployment Seasonal Decomposition Dashboard" class="project-img">
+            <div class="preview-overlay">
+              <button class="preview-interactive-btn" data-open-demo="unemployment">
+                <i class="fas fa-chart-line"></i> Launch Decomposition Simulator
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: AI-Driven Smart Manufacturing Dashboard -->
+        <div class="project-card">
+          <div class="project-content">
+            <div>
+              <span class="project-badge"><i class="fas fa-industry"></i> IoT + AI System</span>
+              <h3 class="project-title">AI-Driven Smart Manufacturing Dashboard</h3>
+              <p class="project-desc">
+                A real-time telemetry monitoring system combining FastAPI REST endpoints, Streamlit dashboards, machine
+                learning anomaly detection models, and simulated industrial IoT sensor feeds.
+              </p>
+              <div class="project-tech">
+                <span class="tech-chip">FastAPI</span>
+                <span class="tech-chip">Streamlit</span>
+                <span class="tech-chip">ML Models</span>
+                <span class="tech-chip">IoT APIs</span>
+                <span class="tech-chip">Real-Time</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-primary" data-open-demo="manufacturing">
+                <i class="fas fa-broadcast-tower"></i> Live IoT Simulator
+              </button>
+              <a href="https://github.com/rajsonirs" target="_blank" rel="noopener" class="btn btn-secondary">
+                <i class="fab fa-github"></i> Repository
+              </a>
+            </div>
+          </div>
+
+          <div class="project-preview">
+            <img src="assets/manufacturing.jpg" alt="Smart Manufacturing Telemetry Dashboard" class="project-img">
+            <div class="preview-overlay">
+              <button class="preview-interactive-btn" data-open-demo="manufacturing">
+                <i class="fas fa-microchip"></i> Stream Live Telemetry Feed
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Creative Corner & Interests Section -->
+  <section id="creative" class="creative">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-heart"></i> Personal Interests</span>
+        <h2 class="section-title">Interests & Creative Corner</h2>
+        <p class="section-subtitle">Where data science meets creative expression, real-time visualization, and aesthetic
+          bios.</p>
+      </div>
+
+      <!-- Interests Cards Grid -->
+      <div class="interests-grid">
+        <div class="interest-card">
+          <div class="interest-icon">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <h3>Real-Time Dashboards</h3>
+          <p>Designing crisp data visualizations with Streamlit & Plotly.</p>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>Time-Series Analysis</h3>
+          <p>Uncovering seasonal patterns and forecasting trends with Python.</p>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-icon">
+            <i class="fas fa-network-wire"></i>
+          </div>
+          <h3>IoT + AI Integration</h3>
+          <p>Connecting physical sensor endpoints with smart ML backends.</p>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-icon">
+            <i class="fas fa-feather-alt"></i>
+          </div>
+          <h3>Creative Expressions</h3>
+          <p>Romantic Hindi one-liners & aesthetic minimal English bios.</p>
+        </div>
+      </div>
+
+      <!-- Interactive Creative Quote / Bio Card -->
+      <div class="creative-corner-card">
+        <div class="creative-header">
+          <div>
+            <h3 style="font-size: 1.3rem; color: var(--text-primary);"><i class="fas fa-quote-left"
+                style="color:var(--accent-primary);"></i> Creative Generator</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary);">Select a category to view romantic Hindi lines
+              or minimal tech bios.</p>
+          </div>
+          <div class="creative-tabs">
+            <button class="tab-btn active" data-tab="hindi">Hindi Romantic Lines</button>
+            <button class="tab-btn" data-tab="english">Minimal English Bios</button>
+          </div>
+        </div>
+
+        <div class="quote-display">
+          <p class="quote-text" id="quote-text">"..."</p>
+          <span class="quote-subtext" id="quote-subtext">Creative Corner</span>
+        </div>
+
+        <div class="creative-actions">
+          <button class="btn btn-primary" id="next-quote-btn">
+            <i class="fas fa-sync-alt"></i> Next Line
+          </button>
+          <button class="btn btn-secondary" id="copy-quote-btn">
+            <i class="fas fa-copy"></i> Copy Line
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-paper-plane"></i> Get In Touch</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Have a project, collaboration, or data science inquiry? Feel free to drop a message!
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3 style="font-size: 1.8rem; margin-bottom: 12px; color: var(--text-primary);">Reach Out Directly</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7;">
+            Always open to discussing real-time web systems, Python data science projects, FastAPI integrations, or
+            time-series analysis ideas.
+          </p>
+
+          <div class="contact-info-list">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email Address</h4>
+                <a href="mailto:rajsoni93061@gmail.com">rajsoni93061@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="contact-details">
+                <h4>GitHub Profile</h4>
+                <a href="https://github.com/rajsonirs" target="_blank" rel="noopener">github.com/rajsonirs</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Degree Program</h4>
+                <span>B.Tech CS (Data Science), 2023–2027</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="form-name">Your Name</label>
+            <input type="text" id="form-name" class="form-input" placeholder="e.g. Alex Rivera" required>
+          </div>
+
+          <div class="form-group">
+            <label for="form-email">Your Email</label>
+            <input type="email" id="form-email" class="form-input" placeholder="e.g. alex@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="form-message">Your Message</label>
+            <textarea id="form-message" class="form-input" placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-socials">
+        <a href="https://github.com/rajsonirs" target="_blank" rel="noopener" class="social-icon-btn" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:rajsoni93061@gmail.com" class="social-icon-btn" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+      <p style="color: var(--text-secondary); font-size: 0.9rem;">
+        &copy; 2026 <strong>Raj Soni</strong>. Crafted with <i class="fas fa-heart" style="color: #ef4444;"></i> for AI
+        & Data Science.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Modal 1: Unemployment Seasonal Trend Demo -->
+  <div class="modal-overlay" id="modal-unemployment">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3><i class="fas fa-chart-area" style="color: var(--accent-primary);"></i> Unemployment Time-Series
+          Decomposition Simulator</h3>
+        <button class="modal-close-btn" aria-label="Close Modal"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="modal-body">
+        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 16px;">
+          Interactive view of seasonal decomposition component analysis for unemployment data (Python, Pandas,
+          Statsmodels).
+        </p>
+
+        <div class="demo-controls">
+          <button class="demo-btn active" data-component="all">Show All Components</button>
+          <button class="demo-btn" data-component="trend">Isolate Trend</button>
+          <button class="demo-btn" data-component="seasonal">Isolate Seasonal Cycle</button>
+        </div>
+
+        <div class="chart-wrapper">
+          <canvas id="unemployment-chart"></canvas>
+        </div>
+
+        <div class="demo-stats-row">
+          <div class="demo-stat-card">
+            <span>Mean Rate</span>
+            <strong>5.52%</strong>
+          </div>
+          <div class="demo-stat-card">
+            <span>Peak Month</span>
+            <strong>Feb (6.4%)</strong>
+          </div>
+          <div class="demo-stat-card">
+            <span>Seasonal Amplitude</span>
+            <strong>±0.5%</strong>
+          </div>
+          <div class="demo-stat-card">
+            <span>Trend Direction</span>
+            <strong>Decreasing (-0.1%/mo)</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Smart Manufacturing Live IoT Demo -->
+  <div class="modal-overlay" id="modal-manufacturing">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3><i class="fas fa-industry" style="color: var(--accent-primary);"></i> AI Smart Manufacturing IoT Stream
+          Simulator</h3>
+        <button class="modal-close-btn" aria-label="Close Modal"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="modal-body">
+        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 16px;">
+          Live real-time telemetry stream simulator receiving sensor data via simulated FastAPI endpoints.
+        </p>
+
+        <div class="chart-wrapper">
+          <canvas id="iot-chart"></canvas>
+        </div>
+
+        <div class="demo-stats-row">
+          <div class="demo-stat-card">
+            <span>Bearing Temp</span>
+            <strong id="stat-temp">42.5 °C</strong>
+          </div>
+          <div class="demo-stat-card">
+            <span>Vibration</span>
+            <strong id="stat-vib">12.2 Hz</strong>
+          </div>
+          <div class="demo-stat-card">
+            <span>Spindle Speed</span>
+            <strong id="stat-rpm">1460 RPM</strong>
+          </div>
+          <div class="demo-stat-card">
+            <span>AI Risk Status</span>
+            <strong id="stat-status" style="color: #22c55e;">NORMAL</strong>
+          </div>
+        </div>
+
+        <div style="margin-top: 16px;">
+          <h4 style="font-size: 0.9rem; color: var(--text-primary); margin-bottom: 6px;">
+            <i class="fas fa-terminal" style="color: var(--accent-primary);"></i> Simulated FastAPI Response Stream:
+            <code>POST /api/v1/telemetry/predict</code>
+          </h4>
+          <pre class="fastapi-payload-box" id="fastapi-payload">Connecting to live FastAPI backend endpoint...</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
